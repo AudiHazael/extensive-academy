@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  font-size: 100%;
+  font-size: 75%;
 }
 body {
   background: linear-gradient(to bottom right, #1e3c57, #1c7743);
@@ -148,10 +148,6 @@ nav {
 
 .contact {
   color: $textLight;
-  img {
-    width: 5rem;
-    height: auto;
-  }
 }
 
 form {

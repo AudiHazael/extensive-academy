@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 import { FaWhatsapp, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 import "../styles/styles.scss";
@@ -36,7 +35,7 @@ function Home() {
           name="description"
           content="Extensive Academy is a top private school in Simawa, serving families in Lagos, Sagamu, Ogijo, and across Ogun State seeking affordable, quality education outside the city."
         />
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <link rel="canonical" href="https://extensive-academy.vercel.app/" />
 
         <script type="application/ld+json">
           {`
@@ -53,7 +52,7 @@ function Home() {
           "addressCountry": "NG"
         },
         "telephone": "+2347039404364",
-        "url": "https://yourdomain.com",
+        "url": "https://extensive-academy.vercel.app/",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.8",
@@ -279,7 +278,7 @@ function Home() {
 
       <AccordionFlush />
 
-      <section className="contact mt-5">
+      <section className="contact mt-5 mb-5">
         <div className="container">
           <div
             className="d-flex justify-content-center align-items-center socials"
@@ -306,51 +305,29 @@ function Home() {
             data-aos-easing="ease-in-out"
             data-aos-delay="100"
             data-aos-duration="800">
-            <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 d-flex flex-column align-items-center  images">
-              <div className="details">
-                <p className="d-flex">
-                  <MdLocationOn
-                    className="me-4 mt-1"
-                    size={24}
-                    color="#f6edd9"
-                  />
-                  Plot 15, Jesus Avenue, Ologbun, Simawa <br /> Lukosi Road,
-                  Ogun State
-                </p>
-                <p className="d-flex">
-                  {" "}
-                  <MdPhone className="me-4 mt-1" size={24} color="#f6edd9" />
-                  07039404364 <br />
-                  08058594710
-                </p>
-                <p className="me-4 mt-1">
-                  {" "}
-                  <MdEmail className="me-4 mt-1" size={24} color="#f6edd9" />
-                  extensiveacademy@gmail.com
-                </p>
-
-                <div className="whatsapp-contact mt-4">
-                  <h6>
-                    For all your enquiries, you can contact us through WhatsApp
-                  </h6>
-                  <a
-                    className="btn btn-info text-white fw-bold px-4 mt-2"
-                    href="https://wa.link/8k0f7s"
-                    target="_blank"
-                    rel="nofollow">
-                    <FaWhatsapp />
-                    Contact Us !
-                  </a>
-                </div>
-              </div>
-            </div>
             <div
-              className="col-lg-6 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center align-items-center"
+              className="col-lg-6 col-md-12 mb-lg-0 w-100 d-flex justify-content-start align-items-center"
               data-aos="fade"
               data-aos-easing="ease-in-out"
               data-aos-delay="100"
               data-aos-duration="800">
               <Form />
+            </div>
+
+            <div className="col-md-6 col-12 mb-4 mb-lg-0 d-flex flex-column align-items-center">
+              <div className="whatsapp-contact mt-4 d-flex flex-column justify-content-center align-items-center">
+                <h6>
+                  For all your enquiries, you can contact us through WhatsApp
+                </h6>
+                <a
+                  className="btn btn-info text-white fw-bold px-4 mt-2 d-flex justify-content-center align-items-center"
+                  href="https://wa.link/8k0f7s"
+                  target="_blank"
+                  rel="nofollow">
+                  <FaWhatsapp className="me-3" size={20} color="#f6edd9" />
+                  Contact Us !
+                </a>
+              </div>
             </div>
           </div>
         </div>

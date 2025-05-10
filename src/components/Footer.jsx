@@ -4,6 +4,7 @@ import "../styles/styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from "react-router-dom";
+import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 function Footer() {
   return (
@@ -22,20 +23,31 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            {/* <div className="col-lg-4 col-md-6 col-sm-12 mb-4 pt-5 d-flex justify-content-center align-items-center">
-              <div className="col-md-4 col-12 contact-info P-4">
-                <p>
-                  Plot 15, Jesus Avenue, Ologbun, Simawa <br /> Lukosi Road,
-                  Ogun State
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4 pt-5 ms-4 d-flex justify-content-left align-items-center">
+              <div className="details">
+                <p className="d-flex">
+                  <MdLocationOn
+                    className="me-3 mt-1"
+                    size={24}
+                    color="#f6edd9"
+                  />
+                  Plot 15, Jesus Avenue, Ologbun, Simaw Lukosi <br /> Road, Ogun
+                  State
                 </p>
-                <p>
+                <p className="d-flex">
+                  {" "}
+                  <MdPhone className="me-3 mt-1" size={24} color="#f6edd9" />
                   07039404364 <br />
                   08058594710
                 </p>
-                <p>extensiveacademy@gmail.com</p>
+                <p className="me-4 mt-1">
+                  {" "}
+                  <MdEmail className="me-3 mt-1" size={24} color="#f6edd9" />
+                  extensiveacademy@gmail.com
+                </p>
               </div>
-            </div> */}
-            <div className="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center"></div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-start"></div>
           </div>
           <div className="copyright p-0 m-0 d-flex justify-content-center">
             <p className="">
