@@ -1,0 +1,250 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  background: linear-gradient(to bottom right, #1e3c57, #1c7743);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, sans-serif;
+  font-weight: 300;
+}
+
+// Variables
+$textLight: #f6edd9;
+$textdark: #010101;
+$spanText: #86b78c;
+$borderColor: #9da9dfcc;
+
+nav {
+  background: #1e3c57;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+
+  .navbar-nav {
+    margin-left: 0 !important; // force left alignment
+  }
+
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.hero {
+  background-image: url("/assets/bgImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  height: 50vh;
+
+  h1 {
+    color: $textLight;
+    font-size: 2rem;
+  }
+
+  h2 {
+    color: $textLight;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  p.span {
+    color: $spanText;
+    line-height: 1;
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #9da9df;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 10rem;
+  }
+}
+
+.about-us {
+  color: $textLight;
+  h5 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  ul {
+    li {
+      list-style: none;
+      font-size: 0.95rem;
+    }
+  }
+
+  .btn {
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #9da9df;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 10rem;
+  }
+}
+
+.events {
+  color: $textLight;
+  .event-item {
+    border-radius: 25px;
+    .images {
+      background-color: $textLight;
+      // padding: 2rem;
+      img {
+        height: 25rem;
+        width: auto;
+        transform: rotate(15deg);
+      }
+    }
+  }
+}
+
+.staff {
+  h4 {
+    color: $textLight;
+  }
+  .card {
+    background-color: $textLight;
+    img {
+      width: auto;
+    }
+    .card-body {
+      h3 {
+        color: $textdark;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.contact {
+  color: $textLight;
+  img {
+    width: 5rem;
+    height: auto;
+  }
+}
+
+form {
+  label {
+    color: $textLight;
+  }
+}
+
+.faq {
+  background-color: $textLight;
+}
+
+footer {
+  color: $textLight;
+  font-size: 0.95rem;
+  .copyright {
+    p {
+      font-size: 0.75rem;
+      a {
+        color: $borderColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* === Responsive Grid System === */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* === Breakpoints === */
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+}
+
+/* Styles for mobile devices (767px or smaller) */
+@media (max-width: 767px) {
+  .hero {
+    background-image: url("/assets/bgImgMobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
+  .events {
+    .event-item {
+      border: none;
+      .images {
+        border: none !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 0.25 0.5rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: auto;
+          width: 100%;
+          transform: rotate(0deg);
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+/* Styles for tablets or larger devices (768px or larger) */
+@media (min-width: 768px) {
+}
