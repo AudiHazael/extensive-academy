@@ -16,7 +16,7 @@ import AccordionFlush from "../components/accordion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function App() {
+function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1200, // animation duration
@@ -366,4 +366,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
