@@ -48,7 +48,7 @@ function Home() {
           "streetAddress": "Plot 15, Jesus Avenue",
           "addressLocality": "Simawa",
           "addressRegion": "Ogun",
-          "postalCode": "Your Postal Code",
+          "postalCode": "121101",
           "addressCountry": "NG"
         },
         "telephone": "+2347039404364",

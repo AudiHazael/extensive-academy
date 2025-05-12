@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
   font-size: 75%;
 }
+html,
 body {
   background: linear-gradient(to bottom right, #1e3c57, #1c7743);
   background-size: cover;
@@ -28,7 +29,7 @@ nav {
   color: white;
 
   .navbar-nav {
-    margin-left: 0 !important; // force left alignment
+    margin-left: 0 !important;
   }
 
   .nav-link {
@@ -119,7 +120,7 @@ nav {
     .images {
       background-color: $textLight;
       width: fit-content;
-      padding: 1rem;
+      // padding: .5rem;
     }
   }
 }
