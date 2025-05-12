@@ -18,9 +18,9 @@ import "aos/dist/aos.css";
 function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // animation duration
-      easing: "ease-in-out", // easing function
-      once: true, // whether animation should happen only once
+      duration: 1200,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
@@ -173,8 +173,7 @@ function Home() {
               data-aos-duration="800">
               <div className="ratio ratio-16x9">
                 <iframe
-                  src="https://www.youtube.com/embed/xxxxxxxxxx" // Replace with your actual video ID
-                  title="YouTube video"
+                  src="https://www.youtube.com/embed/xxxxxxxxxx"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen></iframe>
               </div>
@@ -198,18 +197,18 @@ function Home() {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Inventore excepturi dignissimos accusamus? Alias inventore ipsam
                 culpa sunt suscipit, commodi unde dolore reiciendis excepturi
-                odit saepe.
+                odit saepe. <br />
+                <br />
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
+                molestiae aperiam possimus sapiente in consequatur dicta qui,
+                eos eum illum esse non cumque numquam aspernatur exercitationem
+                culpa pariatur veniam ut temporibus provident debitis ipsa.
+                Ducimus, vero non at rem sequi deleniti. Eos voluptates culpa
+                ipsa nulla nesciunt ratione quo explicabo.
               </p>
             </div>
             <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center align-items-center images">
-              <div
-                id="carouselExampleSlidesOnly"
-                className="carousel slide"
-                data-bs-ride="carousel">
-                <div className="carousel-inner">
-                  <ImageCarousel />
-                </div>
-              </div>
+              <ImageCarousel />
             </div>
           </div>
         </div>
@@ -278,6 +277,71 @@ function Home() {
 
       <AccordionFlush />
 
+      <section className="testimonial pt-5 pb-5">
+        <div className="container">
+          <div className="row justify-content-center align-content-center">
+            <div className="col-md-5 col-12 p-4">
+              <h4>Testimonials</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+                dolorum similique qui neque, aspernatur tenetur iure. Dolorem
+                rerum ratione nobis nisi? Eos enim maiores repudiandae et
+                praesentium ex? Obcaecati, architecto?
+              </p>
+            </div>
+            <div
+              className="col-md-7 col-12 mt-4 p-4 testimonial-item"
+              style={{ width: "35rem" }}>
+              <div
+                id="carouselExampleSlidesOnly"
+                className="carousel slide"
+                data-bs-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <div className="">
+                      <p className="m-0">
+                        'The environment is very conducive to learning, the
+                        teachers are excellent, and the management is highly
+                        effective. The safety and security of your ward is rest
+                        assured.'
+                      </p>
+                      <h5 className="mt-2">Hazael Audi</h5>
+                    </div>
+                  </div>
+
+                  <div className="carousel-item">
+                    <div className="">
+                      <p className="m-0">
+                        'Extensive Academy is a fantastic school with dedicated
+                        teachers and a supportive environment. The staff truly
+                        care about the students and create a positive space for
+                        learning and growth. I’m very happy with the experience
+                        and highly recommend it. Their cultural activities are
+                        especially impressive—fun, inclusive, and a great way
+                        for students to express themselves.'
+                      </p>
+                      <h5 className="mt-2">Isaac Ayomide</h5>
+                    </div>
+                  </div>
+
+                  <div className="carousel-item">
+                    <div className="">
+                      <p className="m-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur repudiandae nam excepturi odit earum illo
+                        sit incidunt perspiciatis illum, fugiat distinctio
+                        recusandae. Facilis, provident magnam.
+                      </p>
+                      <h5 className="mt-2">James Casidy</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="contact mt-5 mb-5">
         <div className="container">
           <div
@@ -299,34 +363,26 @@ function Home() {
             </div>
           </div>
 
-          <div
-            className="row  justify-content-center align-items-center"
-            data-aos="fade"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="100"
-            data-aos-duration="800">
-            <div
-              className="col-lg-6 col-md-12 mb-lg-0 w-100 d-flex justify-content-start align-items-center"
-              data-aos="fade"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="100"
-              data-aos-duration="800">
-              <Form />
-            </div>
+          <div className="row justify-content-center align-items-center">
+            <div className="row justify-content-center align-items-center">
+              <div className="col-md-6 col-lg-6 mb-4">
+                <Form />
+              </div>
 
-            <div className="col-md-6 col-12 mb-4 mb-lg-0 d-flex flex-column align-items-center">
-              <div className="whatsapp-contact mt-4 d-flex flex-column justify-content-center align-items-center">
-                <h6>
-                  For all your enquiries, you can contact us through WhatsApp
-                </h6>
-                <a
-                  className="btn btn-info text-white fw-bold px-4 mt-2 d-flex justify-content-center align-items-center"
-                  href="https://wa.link/8k0f7s"
-                  target="_blank"
-                  rel="nofollow">
-                  <FaWhatsapp className="me-3" size={20} color="#f6edd9" />
-                  Contact Us !
-                </a>
+              <div className="col-md-6 col-lg-6 mb-4">
+                <div className="whatsapp-contact mt-4 d-flex flex-column justify-content-center align-items-center">
+                  <h6>
+                    For all your enquiries, you can contact us through WhatsApp
+                  </h6>
+                  <a
+                    className="btn btn-info text-white fw-bold px-4 mt-2 d-flex justify-content-center align-items-center"
+                    href="https://wa.link/8k0f7s"
+                    target="_blank"
+                    rel="nofollow">
+                    <FaWhatsapp className="me-3" size={20} color="#f6edd9" />
+                    Contact Us!
+                  </a>
+                </div>
               </div>
             </div>
           </div>

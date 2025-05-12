@@ -4,7 +4,7 @@ const images = Array.from({ length: 20 }, (_, i) => `/assets/img${i + 1}.jpeg`);
 
 const ImageCarousel = () => {
   return (
-    <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center align-items-center images">
+    <div className="d-flex justify-content-center align-items-center images">
       <div
         id="carouselExampleSlidesOnly"
         className="carousel slide"

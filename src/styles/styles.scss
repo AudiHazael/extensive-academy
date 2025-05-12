@@ -118,12 +118,8 @@ nav {
     border-radius: 25px;
     .images {
       background-color: $textLight;
-      // padding: 2rem;
-      img {
-        height: 25rem;
-        width: auto;
-        transform: rotate(15deg);
-      }
+      width: fit-content;
+      padding: 1rem;
     }
   }
 }
@@ -158,6 +154,27 @@ form {
 
 .faq {
   background-color: $textLight;
+}
+
+.testimonial {
+  color: $textLight;
+  .row {
+    .testimonial-item {
+      background: $textLight;
+      color: $textdark;
+    }
+  }
+}
+
+// image.jsx
+.images {
+  .carousel-item {
+    img {
+      height: 25rem;
+      width: auto;
+      transform: rotate(10deg);
+    }
+  }
 }
 
 footer {
