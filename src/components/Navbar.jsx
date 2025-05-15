@@ -24,7 +24,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="mailto:extensuveacademy@gmail.com"
+                href="mailto:extensiveacademy@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer">
                 extensiveacademy@gmail.com
